@@ -1,0 +1,36 @@
+{
+  "api": {
+    "name": "api",
+    "connector": "rest",
+    "operations": [
+      {
+        "template": {
+          "method": "GET",
+          "url": "http://datamall2.mytransport.sg/ltaodataservice/Traffic-Images",
+          "headers": {
+            "accepts": "application/json",
+            "content-type": "application/json",
+            "Accountkey": "accountkey"
+          },
+          "query": {
+          }
+        },
+        "functions": {
+          "getTrafficImage": [
+            
+          ]
+        }
+      }
+    ]
+  },
+  "mongo": {
+    "host": "demo.traffic.com",
+    "port": 27017,
+    "url": "",
+    "database": "trafficdb",
+    "password": "password",
+    "name": "mongo",
+    "user": "username",
+    "connector": "mongodb"
+  }
+}

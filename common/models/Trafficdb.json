@@ -1,0 +1,30 @@
+{
+  "name": "Trafficdb",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mongodb":{ 
+    "collection": "Trafficdb"
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "date": {
+      "type": "date"
+    },
+    "time": {
+      "type": "string"
+    },
+    "value": {
+      "type": "object",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
